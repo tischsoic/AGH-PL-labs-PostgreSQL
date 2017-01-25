@@ -1,44 +1,66 @@
-create table klient (
-    idklienta varchar(10) primary key, -- - typ znakowy, maksymalnie 10 znaków (tzn. użyć varchar(10)), klucz główny,
-    haslo varchar(10)- typ znakowy, maksymalnie 10 znaków, minimum 4 znaki, wymagane,
-    nazwa - typ znakowy, maksymalnie 40 znaków, wymagane,
-    miasto - typ znakowy, maksymalnie 40 znaków, wymagane,
-    kod - typ znakowy, dokładnie 6 znaków, wymagane,
-    adres - typ znakowy, maksymalnie 40 znaków, wymagane,
-    email - typ znakowy, maksymalnie 40 znaków,
-    telefon - typ znakowy, maksymalnie 16 znaków, wymagane,
-    fax - typ znakowy, maksymalnie 16 znaków,
-    nip - typ znakowy, dokładnie 13 znaków,
-    regon - typ znakowy, dokładnie 9 znaków
-)
+create table klienci (
+    idklienta varchar(10) primary key,
+    haslo varchar(10),
+    nazwa varchar(40) not null,
+    miasto varchar(40) not null,
+    kod char(6) not null,
+    adres varchar(40) not null,
+    email varchar(40),
+    telefon varchar(16) not null,
+    fax varchar(16),
+    nip char(13),
+    regon char(9),
+    constraint dlugosc_hasla check (length(haslo) >= 4)
+);
 
-idkompozycji - typ znakowy, dokładnie 5 znaków (tzn. użyć char(5)), klucz główny,
-nazwa - typ znakowy, maksymalnie 40 znaków, wymagane,
-opis - typ znakowy, maksymalnie 100 znaków,
-cena - typ numeryczny z dokładnością do 2 cyfr po przecinku, minimalna cena to 40.00 zł,
-minimum - typ całkowity,
-stan - typ całkowity,
+create table kompozycje (
+    idkompozycji char(5) primary key,
+    nazwa varchar(40) not null,
+    opis varchar(100),
+    cena numeric(7, 2),
+    minimum integer,
+    stan integer,
+    constraint minimalna_cena check (cena >= 40.00)
+);
 
-idodbiorcy - typ serial, klucz główny,
-nazwa - typ znakowy, maksymalnie 40 znaków, wymagane,
-miasto - typ znakowy, maksymalnie 40 znaków, wymagane,
-kod - typ znakowy, dokładnie 6 znaków, wymagane,
-adres - typ znakowy, maksymalnie 40 znaków, wymagane,
+create table odbiorcy (
+    idodbiorcy serial primary key,
+    nazwa varchar(40) not null,
+    miasto varchar(40) not null,
+    kod char(6) not null,
+    adres varchar(40) not null
+);
 
-idzamowienia - typ całkowity, klucz główny,
-idklienta - typ znakowy, maksymalnie 10 znaków, klucz obcy, wymagane,
-idodbiorcy - typ całkowity, klucz obcy, wymagane,
-idkompozycji - typ znakowy, dokładnie 5 znaków, klucz obcy, wymagane,
-termin - data, wymagane,
-cena - typ numeryczny z dokładnością do 2 cyfr po przecinku,
-zaplacone - typ logiczny,
-uwagi - typ znakowy, maksymalnie 200 znaków,
+create table zamowienia (
+    idzamowienia integer primary key,
+    idklienta varchar(10) not null,
+    idodbiorcy integer not null,
+    idkompozycji char(5) not null,
+    termin date not null,
+    cena numeric(7, 2),
+    zaplacone boolean,
+    uwagi varchar(200),
+    foreign key (idklienta) references klienci,
+    foreign key (idodbiorcy) references odbiorcy,
+    foreign key (idkompozycji) references kompozycje
+);
 
-idzamowienia - typ całkowity, klucz główny,
-idklienta - typ znakowy, maksymalnie 10 znaków,
-idkompozycji - typ znakowy, dokładnie 5 znaków,
-cena - typ numeryczny z dokładnością do 2 cyfr po przecinku,
-termin - data,
+create table historia (
+    idzamowienia integer primary key,
+    idklienta varchar(10),
+    idkompozycji char(5),
+    cena numeric(7, 2),
+    termin date
+);
 
-idkompozycji - typ znakowy, dokładnie 5 znaków, klucz główny i klucz obcy,
-data - data.
+create table zapotrzebowanie (
+    idkompozycji char(5) primary key,
+    data date,
+    foreign key (idkompozycji) references kompozycje
+);
+
+-- Sprawdź jaka jest wartość domyślna w kolumnie odbiorcy.idodbiorcy. Skąd się bierze ta wartość?
+select column_name, column_default
+from information_schema.columns
+where (table_schema, table_name) = ('public', 'odbiorcy')
+order by ordinal_position;

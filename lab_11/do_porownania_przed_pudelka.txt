@@ -1,0 +1,22 @@
+ idpudelka |         nazwa         |                                                             opis                                                             | cena  | stan 
+-----------+-----------------------+------------------------------------------------------------------------------------------------------------------------------+-------+------
+ alls      | Pory roku             | Jagody, truskawki i maliny, wszystkie s³odziutkie i smaczne.                                                                 | 14.00 |  700
+ alpi      | Kolekcja alpejska     | Alpejskie jagody i maliny w naszej najlepszej czekoladzie.                                                                   | 20.00 |  400
+ autu      | Kolekcja jesienna     | Rodzinne pude³ko czekoladek, na jesienne wieczory.                                                                           | 43.00 |  200
+ bitt      | Gorzkie czekoladki    | Nasza gorzka czekolada z jagodami, wiœniami, marmolad¹, malinami i truskawkami.                                              | 27.70 |  200
+ cher      | Klasyczne wiœnie      | Ca³e wiœnie w czekoladzie, klasyczne i s³odkie.                                                                              | 16.20 |  500
+ fudg      | Kremowa fantazja      | Kolekcja czekoladek kremowych - jak senne marzenie.                                                                          | 18.00 |  400
+ heav      | Niebiañskie orzechy   | Najlepsze orzechy w orzechowych czekoladkach.                                                                                | 15.00 |  300
+ inte      | Miêdzynarodowe        | Miêdzynarodowy zestaw czekoladek zawieraj¹cy czekoladki: Amerykañska piêknoœæ, Smak Brazylii i Czekoladowe kiwi.             | 34.00 |  500
+ isla      | Islandzka kolekcja    | Delikatesy które zabior¹ Ciê na bezludn¹ wyspê, czekoladki: Czekoladowe kiwi, Bia³e lilie i Tropikalna palma.                | 35.00 |  400
+ love      | Serca kochanków       | Najlepsze czekoladki mleczne w sercowej kolekcji, takie jak: Z³amane serce, Serce kochanka i Serce na d³oni.                 | 17.50 |  300
+ marz      | Marcepanowy cud       | Œwietny zestaw marcepanowych czekoladek.                                                                                     | 32.20 |  500
+ nort      | Kolekcja pó³nocna     | Szczególna kolekcja czekoladek dla kochanków, takich jak: Marcepanowy klon, Marcepanowa jaskó³ka i  Niezapominajki.          | 32.20 |  700
+ paci      | Obfitoœæ Pacyfiku     | Najwykwintniejszy zestaw czekoladek Pacyfiku: Bia³e lilie, Amaretto z orzechami i Orzechy w kremie.                          | 21.00 |  500
+ pean      | Kremowe delikatesy    | Oblewana czekolad¹ masa kremowa, smakuj¹ca wszystkim.                                                                        | 19.00 |  900
+ roma      | Kolekcja romantyczna  | Nasz klasyczny i romantyczny wybór czekoladek: Migda³owa ambrozja, P³omienna ekstaza, Amerykañska piêknoœæ i Jab³kowe amory. | 34.00 |  700
+ supr      | Smaki                 | Smaki wybranych orzechów oblewanych czekolad¹.                                                                               | 18.00 |  400
+ swe2      | S³odkie kremowe       | Smakowite kremy dla wszystkich którzy uwielbiaj¹ nadzienie kremowe.                                                          | 23.00 |  200
+ swee      | Mieszanka czekoladowa | Nasza najlepsza mieszanka owoców w czekoladzie.                                                                              | 27.00 |  300
+(18 wierszy)
+

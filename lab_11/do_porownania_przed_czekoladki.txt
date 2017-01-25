@@ -1,0 +1,45 @@
+ idczekoladki |           nazwa           | czekolada |   orzechy    |   nadzienie    |                                            opis                                            | koszt | masa 
+--------------+---------------------------+-----------+--------------+----------------+--------------------------------------------------------------------------------------------+-------+------
+ b01          | P³omienna ekstaza         | gorzka    | ³uskane      | krem           | Orzechy w kremie, zatopione w gorzkiej czekoladzie.                                        |  0.30 |   20
+ b02          | Gorzka jagodowa           | gorzka    |              | jagody         | Smakowite górskie jagody w czekoladzie.                                                    |  0.25 |   25
+ b03          | Marcepanowe listki        | gorzka    |              | marcepan       | Marcepany w kszta³cie liœci dêbu oblewane gorzk¹ czekolad¹.                                |  0.40 |   12
+ b04          | Gorzka truskawkowa        | gorzka    |              | truskawki      | Truskawki w gorzkiej czekoladzie, wyœmienite.                                              |  0.23 |   20
+ b05          | Gorzka malinowa           | gorzka    |              | maliny         | Maliny zrywane na bezludnych wyspach, w polewie czekoladowej.                              |  0.25 |   20
+ b06          | Gorzka z marmolad¹        | gorzka    |              | marmolada      | Marmolada w polewie czekoladowej - prawdziwie brytyjski smako³yk.                          |  0.17 |   25
+ b07          | Gorzka z wiœniami         | gorzka    |              | wiœnie         | Ulubione wiœnie królowej Anny zatopione w czekoladzie.                                     |  0.26 |   25
+ b08          | Gorzkie orzechy           | gorzka    | laskowe      |                | Orzechy laskowe w czekoladzie.                                                             |  0.24 |   20
+ d01          | Migda³owy smak            | ciemna    | migda³y      |                | Ca³e migda³y, rêcznie topione w czekoladzie.                                               |  0.30 |   15
+ d02          | Serce na d³oni            | ciemna    |              | krem wiœniowy  | Ciemna czekolada o sercu z kremu wiœniowego.                                               |  0.32 |   25
+ d03          | Potêga orzechów           | ciemna    | ³uskane      |                | Ogromne orzechy rêcznie umieszczane w czekoladzie.                                         |  0.30 |   15
+ d04          | Migdalowa ambrozja        | ciemna    | migda³y      | amaretto       | Migda³y zatapiane w amaretto.                                                              |  0.44 |   25
+ d06          | Smak orzechow laskowych   | ciemna    | laskowe      |                | Ca³e orzechy laskowe, rêcznie topione w czekoladzie.                                       |  0.21 |   10
+ d07          | Wiœniowa klasyczna        | ciemna    |              | wiœnie         | Wiœnie w czekoladzie.                                                                      |  0.28 |   24
+ d08          | Czekoladowe kiwi          | ciemna    | brazylijskie |                | Orzechy brazylijskie na czekoladzie tworz¹ce wspania³¹ kompozycjê wzorowana na owocu kiwi. |  0.29 |   30
+ d09          | Amerykañska pieknoœæ      | ciemna    |              |                | Twarda czekolada w kszta³cie amerykanskich piêknoœci.                                      |  0.24 |   30
+ d11          | Marcepanowe delicje       | ciemna    |              | marcepan       | Smakowity marcepan w gorzkiej czekoladzie.                                                 |  0.38 |   30
+ f01          | Twarda kremowa w³oska     | twarda    | w³oskie      | krem           | S³odziutki krem z orzechami w³oskimi.                                                      |  0.19 |   25
+ f02          | Twarda kremowa pistacjowa | twarda    | pistacjowe   | krem           | S³odziutki krem z orzechami pistacjowymi.                                                  |  0.21 |   25
+ m01          | S³odkie truskawki         | mleczna   |              | truskawki      | Truskawki oblewane mleczn¹ czekolad¹.                                                      |  0.20 |   25
+ m02          | Smak macadamia            | mleczna   | macadamia    |                | Ca³e macadamia, rêcznie umieszczane w mlecznej czekoladzie.                                |  0.40 |   20
+ m03          | Smak pistacji             | mleczna   | Pistacjowe   |                | Ca³e pistacjowe orzechy, rêcznie umieszczane w mlecznej czekoladzie.                       |  0.30 |   12
+ m04          | Rozkosz kremu orzechowego | mleczna   |              | krem orzechowy | Delikatny krem orzechowy robiony z senegalskich orzeszków w mlecznej czekoladzie.          |  0.21 |   12
+ m05          | Marcepanki                | mleczna   |              | marcepan       | Marcepan oblewany mleczn¹ czekolad¹.                                                       |  0.32 |   35
+ m06          | Serce kochanka            | mleczna   |              | krem wiœniowy  | Czekoladki mleczne w kszta³cie serc z nadzieniem wiœniowym.                                |  0.25 |   35
+ m07          | Jab³kowe amory            | mleczna   | migda³y      |                | Mleczne czekoladki w kszta³cie jab³uszek z listkami z migda³ów.                            |  0.24 |   25
+ m08          | Marcepanowy klon          | mleczna   |              | marcepan       | Marcepan w kszta³cie listków klonu z mleczn¹ czekolad¹.                                    |  0.37 |   25
+ m09          | S³odkie maliny            | mleczna   |              | maliny         | Maliny oblewane mleczn¹ czekolad¹.                                                         |  0.26 |   15
+ m10          | Niezapominajki            | mleczna   |              | jagody         | Niezapomniana mleczna czekolada nadziewana jagodami.                                       |  0.19 |   15
+ m11          | S³odkie wiœnie            | mleczna   |              | wiœnie         | Wiœnie w polewie z mlecznej czekolady.                                                     |  0.27 |   20
+ m12          | S³odkie jagody            | mleczna   |              | jagody         | Jagody os³adzane mleczn¹ czekolad¹.                                                        |  0.25 |   20
+ m13          | S³odka marmolada          | mleczna   |              | marmolada      | Mleczna czekolada z nadzieniem z pomarañczowej marmolady.                                  |  0.18 |   30
+ m14          | Wiœnie z orzechami        | mleczna   | laskowe      | krem wiœniowy  | Œwietne orzechy laskowe przykryte kremem wiœniowym i mleczn¹ czekolad¹.                    |  0.26 |   30
+ m15          | Tropikalna palma          | mleczna   |              | kokosy         | Palma z mlecznej czekolady z kokosami.                                                     |  0.23 |   25
+ m16          | Cud marcepanu             | mleczna   |              | marcepan       | Marcepan w kszta³cie migda³ów z czekoladowym "Mniam mniam".                                |  0.33 |   25
+ m17          | Amaretto z orzechali      | mleczna   | laskowe      | amaretto       | Orzechy laskowe z amaretto oblewane mleczn¹ czekolad¹.                                     |  0.36 |   25
+ m18          | Orzechy w kremie          | mleczna   | laskowe      | krem           | Orzechy laskowe z kremem oblewane mleczn¹ czekolad¹.                                       |  0.33 |   20
+ w01          | Marcepanowa jaskó³ka      | bia³a     |              | marcepan       | Marcepanowe jaskó³ki o skrzyd³ach z mlecznej czekolady.                                    |  0.34 |   20
+ w02          | Biale lilie               | bia³a     |              |                | Elegancka bia³a czekolada formowana w kszta³cie lilii.                                     |  0.27 |   25
+ w03          | Zlamane serce             | bia³a     | pekan        |                | Dwie po³ówki pekanowego serca z bia³ej czekolady.                                          |  0.30 |   25
+ w06          | Smak Brazylii             | bia³a     | brazylijskie |                | Brazylijskie orzechy, rêcznie umieszczane w bia³ej czekoladzie.                            |  0.28 |   35
+(41 wierszy)
+
