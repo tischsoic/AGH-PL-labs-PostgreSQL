@@ -28,3 +28,8 @@ where (select sum(sztuk) from zawartosc where zawartosc.idpudelka = pudelka.idpu
         = (select min(ff) from (select sum(sztuk) as ff from zawartosc group by zawartosc.idpudelka) as f)
     or (select sum(sztuk) from zawartosc where zawartosc.idpudelka = pudelka.idpudelka group by zawartosc.idpudelka)
         = (select max(ff) from (select sum(sztuk) as ff from zawartosc group by zawartosc.idpudelka) as f);
+ -- wersja 2
+ select idpudelka, nazwa
+ from pudelka
+ where (select sum(sztuk) from zawartosc where zawartosc.idpudelka = pudelka.idpudelka)
+in ((select min(ff) from (select sum(sztuk) as ff from zawartosc group by zawartosc.idpudelka) as f) , (select max(ff) from (select sum(sztuk) as ff from zawartosc group by zawartosc.idpudelka) as fff));
